@@ -1,0 +1,9 @@
+function getResponseFromAPI(){
+  const promise = new Promise((resolve, reject)=> {
+      settimeout(() => {
+	  resolve("Response from API");
+      }, 2000);
+  })
+    
+  return promise;
+}
