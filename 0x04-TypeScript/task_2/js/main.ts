@@ -1,40 +1,40 @@
 interface DirectorInterface {
-    workFromHome(): void,
-    getCoffeeBreak(): void,
-    workDirectorTasks(): void,
+    workFromHome(): string,
+    getCoffeeBreak(): string,
+    workDirectorTasks(): string,
 }
 
 interface TeacherInterface {
-    workFromHome(): void,
-    getCoffeeBreak(): void,
-    workTeacherTasks(): void,
+    workFromHome(): string,
+    getCoffeeBreak(): string,
+    workTeacherTasks(): string,
 }
 
 class Director implements DirectorInterface {
-    workFromHome(): void{
-        console.log('Working from home')
+    workFromHome(): string{
+        return 'Working from home'
     }
 
-    getCoffeeBreak(): void{
-        console.log('Getting a coffee break')
+    getCoffeeBreak(): string{
+        return 'Getting a coffee break'
     }
 
-    workDirectorTasks(): void{
-        console.log('Getting to director tasks')
+    workDirectorTasks(): string{
+        return 'Getting to director tasks'
     }
 }
 
 class Teacher implements TeacherInterface {
-    workFromHome(): void{
-        console.log('Cannot work from home')
+    workFromHome(): string{
+        return 'Cannot work from home'
     }
 
-    getCoffeeBreak(): void{
-        console.log('Cannot have a break')
+    getCoffeeBreak(): string{
+        return 'Cannot have a break'
     }
 
-    workTeacherTasks(): void{
-        console.log('Getting to work')
+    workTeacherTasks(): string{
+        return 'Getting to work'
     }    
 }
 
